@@ -73,6 +73,15 @@ class EcsCluster(Cluster):
                             effect=Effect.ALLOW,
                             resources=['*']
                         ),
+                        PolicyStatement(
+                            actions=[
+                                "logs:CreateLogGroup",
+                                "logs:CreateLogStream",
+                                "logs:PutLogEvents"
+                            ],
+                            effect=Effect.ALLOW,
+                            resources=['*']
+                        ),
                     ]
                 )
             },
