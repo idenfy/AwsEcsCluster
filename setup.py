@@ -8,7 +8,7 @@ with open('HISTORY.md') as history_file:
 
 setup(
     name='aws_ecs_cluster',
-    version='1.0.1',
+    version='1.1.0',
     license='GNU GENERAL PUBLIC LICENSE Version 3',
     packages=find_packages(exclude=['venv', 'test']),
     description=(
@@ -18,12 +18,12 @@ setup(
     long_description_content_type="text/markdown",
     include_package_data=True,
     install_requires=[
-        'aws_cdk.core>=1.27.0,<1.28.0',
-        'aws_cdk.aws_cloudformation>=1.27.0,<1.28.0',
-        'aws_cdk.aws_ec2>=1.27.0,<1.28.0',
-        'aws_cdk.aws_ecs>=1.27.0,<1.28.0',
-        'aws_cdk.aws_iam>=1.27.0,<1.28.0',
-        'aws_cdk.aws_lambda>=1.27.0,<1.28.0',
+        'aws_cdk.core>=1.44.0,<1.50.0',
+        'aws_cdk.aws_cloudformation>=1.44.0,<1.50.0',
+        'aws_cdk.aws_ec2>=1.44.0,<1.50.0',
+        'aws_cdk.aws_ecs>=1.44.0,<1.50.0',
+        'aws_cdk.aws_iam>=1.44.0,<1.50.0',
+        'aws_cdk.aws_lambda>=1.44.0,<1.50.0',
     ],
     author='Laimonas Sutkus',
     author_email='laimonas@idenfy.com, laimonas.sutkus@gmail.com',
